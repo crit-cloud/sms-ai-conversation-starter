@@ -119,7 +119,7 @@ export const mockLeads: Lead[] = [
     lastMessageTime: '2023-11-15T17:10:00Z',
     numRooms: '1',
     maxBudget: 3000,
-    zip: 02108,
+    zip: 2108, // Fixed: removed leading zero
     thread_id: 'thread_901234',
     messageCount: 7
   }
@@ -131,28 +131,28 @@ export const mockMessages: Record<string, Message[]> = {
     {
       id: 'm1',
       threadId: 'thread_123456',
-      content: 'Hi! I noticed you're looking for a 2-bedroom rental in Atlanta starting March 2025. Is that correct?',
+      content: 'Hi! I noticed you\'re looking for a 2-bedroom rental in Atlanta starting March 2025. Is that correct?',
       timestamp: '2023-11-15T14:35:00Z',
       isAI: true
     },
     {
       id: 'm2',
       threadId: 'thread_123456',
-      content: 'Yes, that's right. Looking for something downtown.',
+      content: 'Yes, that\'s right. Looking for something downtown.',
       timestamp: '2023-11-15T14:45:00Z',
       isAI: false
     },
     {
       id: 'm3',
       threadId: 'thread_123456',
-      content: 'Great! What's your budget range, and do you need any specific amenities?',
+      content: 'Great! What\'s your budget range, and do you need any specific amenities?',
       timestamp: '2023-11-15T14:50:00Z',
       isAI: true
     },
     {
       id: 'm4',
       threadId: 'thread_123456',
-      content: 'My budget is around $2500. I'd like a gym and parking if possible.',
+      content: 'My budget is around $2500. I\'d like a gym and parking if possible.',
       timestamp: '2023-11-15T15:45:00Z',
       isAI: false
     }
@@ -162,14 +162,14 @@ export const mockMessages: Record<string, Message[]> = {
     {
       id: 'm5',
       threadId: 'thread_345678',
-      content: 'Hello! I see you're interested in a rental in San Francisco. How can I help you today?',
+      content: 'Hello! I see you\'re interested in a rental in San Francisco. How can I help you today?',
       timestamp: '2023-11-09T09:00:00Z',
       isAI: true
     },
     {
       id: 'm6',
       threadId: 'thread_345678',
-      content: 'I'm looking for information about apartment availability.',
+      content: 'I\'m looking for information about apartment availability.',
       timestamp: '2023-11-09T09:15:00Z',
       isAI: false
     },
@@ -185,7 +185,7 @@ export const mockMessages: Record<string, Message[]> = {
     {
       id: 'm8',
       threadId: 'thread_901234',
-      content: 'Hi there! I understand you're looking for a 1-bedroom rental in Boston starting March 2025. Is that correct?',
+      content: 'Hi there! I understand you\'re looking for a 1-bedroom rental in Boston starting March 2025. Is that correct?',
       timestamp: '2023-11-14T08:25:00Z',
       isAI: true
     },
@@ -199,7 +199,7 @@ export const mockMessages: Record<string, Message[]> = {
     {
       id: 'm10',
       threadId: 'thread_901234',
-      content: 'Excellent! Boston's downtown area has several options. What's your budget and do you have any must-have amenities?',
+      content: 'Excellent! Boston\'s downtown area has several options. What\'s your budget and do you have any must-have amenities?',
       timestamp: '2023-11-14T09:35:00Z',
       isAI: true
     },
